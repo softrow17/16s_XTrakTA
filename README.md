@@ -5,5 +5,5 @@ This simple tool has been designed around the output of a Prokka genome assembly
 
 The only required input is the directory which contains the Prokka output directories:
 
-python ./16s_XTrakTA.py /PATH/TO/PROKKA/DIRECTORIES
+    python ./16s_XTrakTA.py /PATH/TO/PROKKA/DIRECTORIES
 
