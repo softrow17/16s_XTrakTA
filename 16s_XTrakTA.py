@@ -52,7 +52,7 @@ for subdirectory in os.listdir(args.input_directory):
     if os.path.isdir(subdirectory_path):
         print(f"Processing subdirectory: {subdirectory}")
         for gbk_file in os.listdir(subdirectory_path):
-            if gbk_file.endswith(".gbk"):
+            if gbk_file.endswith((".gbk", ".gbff")):
                 extract_16s_sequences(gbk_file, subdirectory)
 
-print("16S rRNA sequences extraction and saving in FASTQ format completed.")
+print("16S rRNA sequences extraction and saving in FASTA format completed.")
